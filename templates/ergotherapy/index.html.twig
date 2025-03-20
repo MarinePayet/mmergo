@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Ergotherapy{% endblock %}
+
+{% block body %}
+
+<div style="justify-items:center;">
+
+    <div class="yellow-ergo ">
+
+        <div class="display-flex" style="margin:10px;">
+            <h1 class="h1-yellow-ergo">Qu’est ce que </br>l’ergothérapie ?</h1>
+            <p class="p-yellow-ergo">
+                L'ergothérapie est une approche de soins de santé qui vise à 
+                <strong> aider les personnes de tous âges à participer pleinement à leurs activités quotidiennes</strong>,
+                malgré des difficultés physiques, mentales ou émotionnelles. Les ergothérapeutes sont des 
+                <strong> professionnels de santé </strong> diplômés d'État qui exerce sur prescription médicale. Ils accompagnent les personnes pour améliorer leurs capacités, adapter leur environnement et trouver des stratégies pour accomplir les tâches qui leur sont importantes. 
+                <strong>L'objectif principal est de favoriser l'autonomie, le bien-être et la qualité de vie.</strong>
+            <p>
+        </div>
+    </div>
+
+    <div class="blue-ergo">
+        <div class="display-flex" >
+            <div class="div-blue-ergo">
+                <ul>
+                    <li class="li-blue-ergo"><strong> Évalue les capacités et les besoins de la personne</strong>, en tenant compte de ses difficultés, de ses habitudes de vie et de son environnement.</li>
+                    <li class="li-blue-ergo"><strong> Analyse les situations/activités </strong> qui posent problème et recherche les causes des difficultés rencontrées.</li>
+                    <li class="li-blue-ergo"><strong> Met en place un plan d'intervention personnalisé </strong>, en définissant des objectifs concrets et réalisables.</li>
+                    <li class="li-blue-ergo"><strong> Propose des solutions adaptées </strong>, qui peuvent passer par des exercices spécifiques, l'apprentissage de nouvelles stratégies, l'adaptation de l'environnement (par exemple, en conseillant des aides techniques ou en modifiant l'aménagement du domicile), ou encore la préconisation d'aides humaines.</li>
+                    <li class="li-blue-ergo"><strong> Accompagne la personne dans la mise en œuvre de ces solutions </strong>, en lui apportant un soutien et des conseils personnalisés.</li>
+                    <li class="li-blue-ergo"><strong> Évalue régulièrement les progrès réalisés et ajuste le plan d'intervention si nécessaire.</strong></li>
+                </ul>
+            </div>
+            <div >
+                <h2 >Le rôle de l’ergothérapeute</h2>
+            </div>
+        </div> 
+
+        <div>
+            <p class="p-blue-ergo">L'ergothérapeute travaille en étroite collaboration avec les autres professionnels de santé (médecins, infirmiers, kinésithérapeutes, etc.), ainsi qu'avec la famille et l'entourage de la personne. Son objectif est de favoriser l'inclusion sociale et l'amélioration de la qualité de vie de ses patients.</p>
+        </div>
+    </div>
+
+    <div class="pink-ergo " >
+        <div class="display-flex div-pink-ergo" >
+            <h2 class="h2-pink-ergo">Les domaines d’interventions</h2>
+            <p class="p-pink-ergo">
+                L’ergothérapeute intervient <strong> à tous les âges de la vie dans le cadre de pathologies diagnostiquées, de situations de handicap ou de difficultés isolées </strong>, et quand les activités de la vie quotidiennes sont perturbées. 
+                Les principaux motifs de consultation sont :
+            </p>
+        </div>
+
+        <div class="display-flex justify-content-center" >
+            <div class="domain-div-pink-ergo " >
+                <img src="{{ "img/bb.png" }}" alt="bébé" class="ergo-img" >
+                <div class="border border-color border-height-ergo">
+                    <p><strong>Le bébé et le jeune enfant :</strong></p>
+                    <ul>
+                        <li>Alimentation,</li>
+                        <li>Sommeil,</li>
+                        <li>Moments de jeux ou d'éveil</li>
+                        <li>Portage (à bras ou en écharpe),</li>
+                        <li>Déplacements (ramper, 4 pattes, marche)</li>
+                        <li>Change, soins d'hygiène,</li>
+                        <li>Etc...</li>
+                    
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin:10px;">
+                <img src="{{ "img/enfant_ado.png" }}" alt="adolescent" class="ergo-img" >
+                <div style="width:350px; padding-left:10px;" class=" border-height-ergo border border-color">
+                    <p><strong>L’enfant et adolescent : </strong></p>
+
+                    <ul>
+                        <li>L'écriture (manque de lisibilité ou de rapidité, douleur, fatigue, refus,...),</li>
+                        <li>L'utilisation des outils scolaires (règle, équerre, compas, gomme,...),</li>
+                        <li>La toilette et les soins personnels (douche, brossage de temps, soins d'hygiène,...),</li>
+                        <li>L'habillage (lacets, fermeture éclair, boutons, enfilage des vêtement...),</li>
+                        <li>La gestion des émotions et interactions sociales,</li>
+                        <li>Les loisirs (vélo,...),</li>
+                        <li>Etc...</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin:10px;">
+                <img src="{{ "img/adulte_pers_agee.png" }}" alt="adulte" class="ergo-img" >
+                <div style="width:350px; padding-left:10px;" class=" border-height-ergo border border-color">
+                    <p><strong>L’adulte et la personne âgée :</strong></p>
+                    <ul>
+                        <li>L'accessibilité/adaptation du domicile (salle de bain,...),</li>
+                        <li>L'aménagement du poste de travail,</li>
+                        <li>L'adaptation du poste de conduite,</li>
+                        <li>La prévention du risque de chute,</li>
+                        <li>Etc...</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="dark-blue-ergo" >
+        <div class="display-flex" style="margin-right:10px;" >
+            <p class="p-dark-blue-ergo">
+                Au cabinet, j’accueille des enfants <strong>de la naissance à l’adolescence</strong>. Je peux me déplacer au domicile ou 
+                dans les établissements scolaires si cela le nécessite et en fonction de mes disponibilités.
+                Chaque suivi commence par <strong>un temps d’évaluation</strong> afin de réaliser un <strong>diagnostic en ergothérapie</strong>
+                et de déterminer ensemble des <strong>objectifs précis</strong>. Nous travaillons en équipe dans une relation de 
+                partenariat. C’est vous parent, qui êtes <strong>l’expert de votre enfant</strong> ! Mon rôle est de vous accompagner pour
+                qu’ensemble nous trouvions des solutions aux difficultés que vous rencontrez dans le quotidien tout en prenant <strong>en compte 
+                vos valeurs et vos habitudes de vie.</strong></p>
+            <h2 style="margin: auto; height:auto">Notre approche</h2>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

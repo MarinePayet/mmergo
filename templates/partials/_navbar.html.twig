@@ -1,18 +1,76 @@
 
-<nav>
-    {# <ul style="display:flex; justify-content:space-around;"> #}
-
-    {# <ul class="navbar" style="background-color:#F78888"> #}
-    {# <ul class="navbar" style="background-color:#F78888"> #}
-    <ul class="p-4 fs-3 navbar text-decoration-none text-primary-emphasis list-unstyled" style="background-color:#F78888; justify-content:space-evenly; text-decoration:none;">
-        <li><img src="{{ "img/Logo_MM.jpg" }}" alt="Initiale MM"> </li>
-        <li><a class=" text-decoration-none text-white" href="{{ path('app_home') }}">Qui suis-je ? </a></li>
-        <li><a class=" text-decoration-none text-white" href=# >Ergothérapie</a></li>
-        <li><a class=" text-decoration-none text-white" href=# >Consultations</a></li>
-        <li><a class=" text-decoration-none text-white" href=# > Aménagement du domicile </a></li>
-        <li><a class=" text-decoration-none text-white" href=# > Ateliers </a></li>
-        <li><a class=" text-decoration-none text-white" href=# > Tarifs </a></li>
-        <li><a class=" text-decoration-none text-white" href=# > Contact </a></li>
+{# <nav>
+    <ul class="navbarCustom" >
+        <li> <a class=" textDeco" href="{{ path('app_home') }}"><img src="{{ "img/Logo_MM.png" }}" alt="Initiale MM" style="height: 50px;"> </li></a>
+        <li class=" textDeco"><a class=" textDeco" href="{{ path('app_about_me') }}">Qui suis-je ? </a></li>
+        <li><a class=" textDeco " href="{{ path('app_ergotherapy') }}" >Ergothérapie</a></li>
+        <li><a class=" textDeco " href=# >Consultations</a></li>
+        <li><a class=" textDeco " href=# > Aménagement du domicile </a></li>
+        <li><a class=" textDeco " href=# > Ateliers </a></li>
+        <li><a class=" textDeco " href=# > Tarifs </a></li>
+        <li><a class=" textDeco " href=# > Contact </a></li>
 
     </ul>
-</nav>
+</nav>  #}
+
+
+{# <body class="p-3 m-0 border-0 bd-example m-0 border-0"> #}
+        
+    {# <nav class="navbar navbar-expand-lg  navbarCustom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class=" textDeco" href="{{ path('app_home') }}"><img src="{{ "img/Logo_MM.png" }}" alt="Initiale MM" style="height: 50px;"> </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <li> 
+    
+                    <li class="nav-item textDeco">
+                        <a class="textDeco navbar-brand" href="{{ path('app_about_me') }}">Qui suis-je ? </a>
+                    </li>
+                    <li class="nav-item textDeco">
+                        <a class=" textDeco navbar-brand" href="{{ path('app_ergotherapy') }}" >Ergothérapie</a>
+                    </li>
+                    <li class="nav-item textDeco">
+                        <a class="textDeco navbar-brand" href=# >Consultations</a>
+                    </li>
+                    <li class="nav-item textDeco">
+                        <a class="textDeco navbar-brand" href=# >Aménagement du domicile</a>
+                    </li>
+                    <li class="nav-item textDeco">
+                        <a class="textDeco navbar-brand" href=# >Ateliers</a>
+                    </li>
+                    <li class="nav-item textDeco">
+                        <a class="textDeco navbar-brand" href=# >Tarifs</a>
+                    </li>
+                    <li class="nav-item textDeco">
+                        <a class="textDeco navbar-brand" href=# >Contact</a>
+                    </li>
+                    
+                
+                </li>
+            </div>
+        </div>
+    </nav> #}
+    <nav class="navbar navbar-expand-lg navbarCustom">
+        <div class="container-fluid">
+            <a class="textDeco" href="#"><img src="img/Logo_MM.png" alt="Initiale MM" style="height: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="textDeco nav-link" href="#">Qui suis-je ?</a></li>
+                    <li class="nav-item"><a class="textDeco nav-link" href="#">Ergothérapie</a></li>
+                    <li class="nav-item"><a class="textDeco nav-link" href="#">Consultations</a></li>
+                    <li class="nav-item"><a class="textDeco nav-link" href="#">Aménagement du domicile</a></li>
+                    <li class="nav-item"><a class="textDeco nav-link" href="#">Ateliers</a></li>
+                    <li class="nav-item"><a class="textDeco nav-link" href="#">Tarifs</a></li>
+                    <li class="nav-item"><a class="textDeco nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+{# </body> #}
