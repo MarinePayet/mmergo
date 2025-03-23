@@ -12,9 +12,16 @@
     justify-content: space-evenly !important;
     align-items: center !important;
     background-color: #F78888 !important;
-    height: 60px !important;
+    height: 60px ;
     list-style: none !important;
-    font-size: 25px !important;
+    font-size: 25px ;
+    /* font-size: 25px !important; */
+}
+.navbarCustom ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
 }
 
 .footerCustom {
@@ -23,30 +30,17 @@
 
 /* ---------------- PAGE D ACCUEIL ---------------- */
 
-.imageMains {
-    opacity: 0.5;
-    height: 700px;
-    border-bottom-right-radius: 20%;
-}
 
-.testmains {
+.img-mains {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
     opacity: 0.5; 
     background-image: url('img/mains2.png') ;
-    height: 700px; 
+    height: 600px; 
     border-bottom-right-radius: 20%; 
     z-index: 0;
-}  
-.testmainsHORSDIV {
-    opacity: 0.5; 
-    background-image: url('img/mains2.png') ;
-    height: 700px; 
-    border-bottom-right-radius: 20%; 
-    z-index: 100;
 }  
 
 .indexDescription {
@@ -88,7 +82,8 @@ ul li.abc {
 
 
 .mon-parcours {
-    width: 1000px;
+    width: 85%;
+    /* width: 1000px; */
     background-color: #fcd6d6;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
@@ -310,6 +305,11 @@ ul li.abc {
     font-size:large;
 }
 
+.centered{
+    background-color: #F78888;
+
+}
+
 .blue-ergo h2 {
     align-content:center; 
     width:40%;
@@ -324,11 +324,88 @@ ul li.abc {
     width: 350px;
 }
 
+
+/* ---------------- CONSULTATIONS ---------------- */
+
+.consultation-div {
+    width:85%;
+}
+
+.en-savoir-plus-consult{
+    color:black;
+    text-decoration: none;
+}
+.consult-yellow{
+    background-color: #f3d250;
+    height: 135px;
+}
+.consult-blue{
+    background-color: #90ccf4;
+    height: 135px;
+
+}
+.consult-pink{
+    background-color: #F78888;
+    height: 135px;
+
+}
+.consult-dark-blue{
+    background-color: #5da2d5;
+    height: 135px;
+
+}
+
+.expertises-bg-classique{
+    width: 280px; /* Ajuste la largeur selon ton besoin */
+    background-color: #f3d250; 
+}
+.expertises-bg-alimentation{
+    width: 320px; /* Ajuste la largeur selon ton besoin */
+    background-color: #90ccf4; 
+}
+.expertises-bg-sommeil{
+    width: 260px; /* Ajuste la largeur selon ton besoin */
+    background-color: #F78888; 
+}
+.expertises-bg-amenagement{
+    width: 855px; /* Ajuste la largeur selon ton besoin */
+    background-color: #5da2d5; 
+}
+
+.btn-doc{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: #F78888;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
 /* ---------------- MEDIA QUERIES ---------------- */
 /* TABLETTE PAYSAGE */
 @media (max-width: 1024px) {
-    .navbarCustom, .footerCustom {
+    .navbarCustom {
         font-size: 20px;
+    }
+
+    .footerCustom{
+        font-size:medium;
+    }
+
+    .img-mains{
+        height: 350px;
+        background-size: cover;
+    }
+
+    .centered{
+        text-align: center;
+        font-size: 21px;
+        margin-top: 6px;
     }
 
     .domain-div-pink-ergo{
@@ -365,6 +442,18 @@ ul li.abc {
         padding: 10px 0;
     }
 
+    .img-mains{
+        height: 250px;
+    }
+
+    .footerCustom{
+        font-size:medium;
+        height: 100%;
+    }
+
+    .mes-valeurs-img {
+        width: 500px;
+    }
 
     .border-height-ergo{
         height: 100%;
@@ -393,6 +482,21 @@ ul li.abc {
     .navbarCustom, .footerCustom {
         font-size: 16px;
     }
+
+    .img-mains{
+        height: 200px;
+    }
+    .mes-valeurs-img {
+        width: 300px;
+    }
+    .about-me-title{
+        margin-left: 8%;
+    }
+
+    .flex-parcours {
+        flex-direction: column;
+        align-items: center;
+    }
     .yellow-ergo p, .p-blue-ergo, .p-dark-blue-ergo, .div-blue-ergo, .li-blue-ergo, .p-pink-ergo {
         font-size: 0.9rem;
         margin-top: 20px;
@@ -414,4 +518,5 @@ ul li.abc {
     .blue-ergo .display-flex, .dark-blue-ergo .display-flex{
         flex-direction: column-reverse;
     }
+
 }
