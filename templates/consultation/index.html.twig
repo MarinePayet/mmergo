@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ConsultationController!{% endblock %}
+
+{% block body %}
+
+<div class="d-flex justify-content-end">
+    <button class="btn-doc mt-5 me-5">Consultez </br>mes </br>documents</button>
+</div>
+
+<h1 class="ps-5">Les consultations</h1>
+<div class=" consultation-div  m-auto">
+    <div class="divIndexDescription">
+        <div>
+            <div class="consult-yellow">
+
+                <h4 class="pt-2 text-center "> Consultation classique</h4>
+                </br>
+                </br>
+                <p class="pb-2 ms-3 mb-0"><a class=" en-savoir-plus-consult"  href="#consultation-classique"> En savoir plus </a></p>
+            </div>
+            <div>
+                <img src="{{ "img/consult_classique.png" }}" alt="Consultation Classique" class=" expertises-img"  >
+            </div>
+        </div>
+        <div>
+            <div class="consult-blue">
+                <h4 class="pt-2 text-center"> Consultation alimentation</h4>
+                </br>
+                </br>
+                <p class="pb-2 ms-3 mb-0"><a class=" en-savoir-plus-consult" href="#consul-alimentation" > En savoir plus </a></p>
+            </div>
+            <div>
+                <img src="{{ "img/consult_alimentation.png" }}" alt="Consultation Alimentation" class=" expertises-img"  >
+            </div>
+        </div>
+        <div>
+            <div class="consult-pink">
+                <h4 class="pt-2 text-center"> Consultation Sommeil</h4>
+                </br>
+                </br>
+                <p class="pb-2 ms-3 mb-0"><a class=" en-savoir-plus-consult" href="#consult-sommeil" > En savoir plus </a></p>
+
+            </div>
+            <div>
+
+                <img src="{{ "img/Consult_sommeil.png" }}" alt="Consultation Sommeil" class=" expertises-img" >
+            </div>
+        </div>
+        <div>
+
+            <div class="consult-dark-blue">
+                <h4 class="pt-2 text-center"> Aménagement du domicile - </br> préconisations d'aides techniques </h4>
+                <p class="pb-2 ms-3 mb-0"><a class=" en-savoir-plus-consult" href="#amenagement" > En savoir plus </a></p>
+
+            </div>
+            <div>
+
+                <img src="{{ "img/Amenagement_photo.png" }}" alt="Aménagement du domicile" class=" expertises-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="consultation-div m-auto">
+    <div>
+        <div class="expertises-title-container mt-3">
+            <div class="expertises-bg expertises-bg-classique"></div>
+        <h2 id="consultation-classique" class="expertises-title2">Consultation classique</h2>
+    </div>
+    <p>
+        Auprès des enfants ayant un retard de développement ou des troubles neuro-developpementaux (TND) pour améliorer leurs habiletés motrices, cognitives et 
+        sensorielles en lien avec les activités de la vie quotidienne, de loisirs ou scolaires : 
+    </p>
+    <ul>
+        <li> Trouble du spectre de l’autisme (TSA)</li>
+        <li> Trouble déficit de l’attention avec ou sans hyperactivité (TDAH)</li>
+        <li> Trouble développemental de la coordination (TDC, anciennement dyspraxie)</li>
+        <li> Trouble des apprentissages (dyslexie-dysorthographie)</li>
+        <li> Déficience intellectuelle</li>
+        <li> Etc</li>
+    </ul>
+
+    <p>En lien avec mes formations, je propose des consultations sur des thématiques plus spécifiques concernant d’autres activités de la vie quotidienne</p>
+
+</div>
+
+<div>
+    <div>
+        <div class="expertises-title-container mt-3">
+            <div class="expertises-bg expertises-bg-alimentation"></div>
+        <h2 id="consul-alimentation" class="expertises-title2">Consultation alimentation</h2>
+    </div>
+    <p> Pour les bébés et les enfants qui présentent :</p>
+    <ul>
+        <li> Des difficultés alimentaires</li>
+        <li> Des néophobies</li>
+        <li> Un trouble alimentaire pédiatrique (TAP)</li>
+    </ul>
+
+    <p>
+        Pour leur permettre de développer leurs capacités fonctionnelles à s’alimenter, appréhender sensoriellement le repas et la nourriture, 
+        favoriser une installation optimale, proposer des adaptations pour faciliter la prise des repas.
+    </p>
+</div>
+
+<div>
+    <div>
+        <div class="expertises-title-container mt-3">
+            <div class="expertises-bg expertises-bg-sommeil"></div>
+            <h2 id="consult-sommeil" class="expertises-title2">Consultation sommeil</h2>
+    </div>
+    <p> Auprès des bébés et des enfants qui rencontrent :</p>
+    <ul>
+        <li> Des difficultés de coucher (sieste ou nuit)</li>
+        <li> De nombreux réveils nocturnes</li>
+        <li> Des réveils trop matinaux</li>
+        <li> Des cauchemars ou terreurs nocturnes</li>
+    </ul>
+
+    <p>
+        Pour aider les parents à accompagner leur enfant vers l’endormissement autonome dans le respect de ses besoins (en lien avec la théorie de l’attachement).
+    </p>
+</div>
+
+<div>
+    <div>
+        <div class="expertises-title-container mt-3">
+            <div class="expertises-bg expertises-bg-amenagement"></div>
+            <h2 id="amenagement" class="expertises-title2">Aménagement du domicile - préconisation d’aides techniques</h2>
+    </div>
+    <p> 
+        Pour améliorer l’autonomie, diminuer le risque de chute et favoriser une meilleure accessibilité du domicile. 
+        En lien avec votre projet et vos habitudes de vie, mes préconisations peuvent concerner :
+    </p>
+    <ul>
+        <li> l’adaptation du cadre bâti</li>
+        <li> le conseil et la mise en place d’aides techniques.</li>
+    </ul>
+
+    <p>
+        Je peux également intervenir pour préparer votre retour à domicile après une sortie d’hospitalisation.
+    </p>
+</div>
+
+
+
+{% endblock %}
