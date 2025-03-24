@@ -30,6 +30,9 @@
 
 /* ---------------- PAGE D ACCUEIL ---------------- */
 
+.font-pink{
+    color:#F78888
+}
 
 .img-mains {
     display: flex;
