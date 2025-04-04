@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AmenagementController!{% endblock %}
+
+{% block body %}
+
+<div class="m-auto mt-5 div-amenagement">
+        <h1 class="p-5"> Aménager son domicile </br>pour y rester le plus longtemps possible</h1>
+    <div class="px-5 pb-5 div-flex-justify-center maison-dessin-center divIndexDescription-maison-dessin"  >
+    {# <div class="px-5 pb-5 divIndexDescription maison-dessin-center divIndexDescription-maison-dessin"  > #}
+        <p class="me-4 line-h">
+            L'ergothérapeute joue un rôle essentiel dans l'aménagement du domicile et la préconisation d'aides techniques pour favoriser 
+            l'autonomie, prévenir les chutes et permettre le maintien à domicile. 
+            </br>Mon intervention comprend <strong>une évaluation des capacités de la personne, de son environnement (matériel et humain) et de ses 
+            habitudes de vie pour déterminer les aménagements les plus adaptés.</strong> Ces adaptations peuvent concerner le cadre bâti (ex : 
+            remplacement d’une baignoire par une douche), tout comme la mise en place d’aides techniques (siège de douche, barres d’appui,
+            matériel d’aide à la marche…).
+            </br>L'objectif est de sécuriser le domicile, faciliter les activités quotidiennes et permettre à la personne de vivre de 
+            manière autonome et confortable chez elle le plus longtemps possible. De plus, ces aménagements visent également à 
+            soulager le travail des aidants professionnels et familiaux en diminuant le risque de troubles musculosquelettiques 
+            (TMS) liés aux manipulations et aux transferts.
+        </p>
+        <img src="{{ "img/maison_dessin.png" }}" alt="maison-dessin" class="maison-dessin-size">
+    </div>
+    <div class="d-flex justify-content-around pb-5 flex-wrapping">
+        <img src="{{ "img/plan_maison.png" }}" alt="maison-dessin" class="amenagement-img-height" >
+        <img src="{{ "img/mamie.png" }}" alt="maison-dessin" class="amenagement-img-height" >
+        <img src="{{ "img/stana.png" }}" alt="maison-dessin" class="amenagement-img-height" >
+        <img src="{{ "img/douche.png" }}" alt="maison-dessin" class="amenagement-img-height" >
+        <img src="{{ "img/deambulateur.png" }}" alt="maison-dessin" class="amenagement-img-height" >
+    
+    </div>
+
+</div>
+{% endblock %}

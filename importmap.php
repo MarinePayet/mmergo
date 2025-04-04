@@ -25,4 +25,7 @@ return [
     '@hotwired/turbo' => [
         'version' => '7.3.0',
     ],
+    '@googlemaps/js-api-loader' => [
+        'version' => '1.16.8',
+    ],
 ];

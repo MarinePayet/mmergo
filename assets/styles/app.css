@@ -28,10 +28,18 @@
     margin-top: 50px;
 }
 
+.logo-size{
+    height: 50px;
+}
+
 /* ---------------- PAGE D ACCUEIL ---------------- */
 
 .font-pink{
     color:#F78888
+}
+
+.line-h{
+    line-height: 28px;
 }
 
 .img-mains {
@@ -41,8 +49,9 @@
     text-align: center;
     opacity: 0.5; 
     background-image: url('img/mains2.png') ;
-    height: 600px; 
-    border-bottom-right-radius: 20%; 
+    height: 500px; 
+    /* border-bottom-right-radius: 20%;  */
+    border-bottom-right-radius: 90px; 
     z-index: 0;
 }  
 
@@ -58,7 +67,8 @@
     -o-border-radius: 20px;
 }
 
-.divIndexDescription {
+.div-flex-justify-center {
+/* .divIndexDescription { */
     display: flex;
     justify-content: center;
 }
@@ -72,10 +82,10 @@ ul li.abc {
 
 /* ---------------- QUI SUIS-JE ---------------- */
 
-.qui-sui-je {
+/* .qui-sui-je {
     display: flex;
     justify-content: center;
-}
+} */
 
 .about-me-title{
     margin-left:15%;
@@ -83,13 +93,16 @@ ul li.abc {
     margin-bottom: 20px;
 }
 
+.div-en-savoir-plus{
+    width: 80%;
+}
 
 .mon-parcours {
-    width: 85%;
+    width: 80%;
     /* width: 1000px; */
     background-color: #fcd6d6;
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     padding : 20px;
     margin-top: 60px;
 }
@@ -108,7 +121,7 @@ ul li.abc {
 
 .expertises-img {
     width: 356px;
-    height: auto;
+    height: 244px;
 }
 
 .expertises-txt{
@@ -116,11 +129,11 @@ ul li.abc {
 }
 
 .mes-valeurs-img {
-    width: 800px;
+    width: 700px;
     height: auto;
 }
 
-.mx-22 {
+.expertise-card {
     width: 350px; 
     display: flex;
     flex-direction: column;
@@ -196,6 +209,19 @@ ul li.abc {
     border-style: solid !important;
 }
 
+.expertise-card .border-color{
+    height: 342px;
+}
+
+.border-color-white{
+    /* border-color: white !important; */
+    border-color: #F78888 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
 .en-savoir-plus {
     font-weight: 100;
     color: #F78888;
@@ -218,8 +244,9 @@ ul li.abc {
 
 .h1-yellow-ergo{
     margin: auto;
-    width: 30%; 
+    /* width: 30%;  */
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .p-yellow-ergo{
@@ -269,19 +296,24 @@ ul li.abc {
     height:374px;
 }
 
+.div-ergo{
+    width:350px; 
+    padding-left:10px;
+}
+
 .div-pink-ergo{
-    padding-top: 20px; 
-    padding-bottom: 20px;
+    padding-top: 50px; 
+    padding-bottom: 50px;
 }
 
 .domain-div-pink-ergo{
-    margin:10px; 
     padding-left:10px;
+    margin-bottom: 15px;
 }
 
 .h2-pink-ergo{
     margin: auto;
-    width: 30%; 
+    /* width: 30%;  */
     text-align: center; 
     padding-left:10px; 
     padding-right:10px;
@@ -325,6 +357,8 @@ ul li.abc {
 
 .ergo-img{
     width: 350px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 
@@ -336,26 +370,47 @@ ul li.abc {
 
 .en-savoir-plus-consult{
     color:black;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 .consult-yellow{
     background-color: #f3d250;
     height: 135px;
 }
+.border-color-yellow{  
+    border-color: #f3d250 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+}
 .consult-blue{
     background-color: #90ccf4;
     height: 135px;
-
+}
+.border-color-blue{  
+    border-color: #90ccf4 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
 }
 .consult-pink{
     background-color: #F78888;
     height: 135px;
 
 }
+.border-color-pink{  
+    border-color: #F78888 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+}
 .consult-dark-blue{
     background-color: #5da2d5;
     height: 135px;
-
+}
+.consult-dark-blue h4 {
+    width:356px;
+}
+.border-color-dark-blue{  
+    border-color: #5da2d5 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
 }
 
 .expertises-bg-classique{
@@ -375,12 +430,7 @@ ul li.abc {
     background-color: #5da2d5; 
 }
 
-.btn-doc{
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+.btn-doc, .btn-tarif{
     background-color: #F78888;
     color: white;
     border: none;
@@ -388,6 +438,51 @@ ul li.abc {
     font-weight: bold;
 }
 
+.btn-doc{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.btn-tarif{
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+/* ---------------- AMENAGEMENT DU DOMICILE ---------------- */
+
+.amenagement-img-height{
+    height: 200px;
+}
+
+.maison-dessin-size{
+    width: 26%;
+    height: 273px;
+    border-radius:60px;
+}
+.divIndexDescription-maison-dessin p {
+    text-align: justify;
+}
+.div-amenagement{
+    width:85%; 
+    background-color:#fcd6d6; 
+    border-radius:40px;
+}
+
+.flex-wrapping{
+    flex-wrap:wrap;
+}
+
+/* ---------------- TARIFS ET CONTACTS ---------------- */
+
+/* .no-label {
+    label: none;
+} */
 
 /* ---------------- MEDIA QUERIES ---------------- */
 /* TABLETTE PAYSAGE */
@@ -395,7 +490,10 @@ ul li.abc {
     .navbarCustom {
         font-size: 20px;
     }
-
+    .expertises-bg-amenagement{
+        width: 646px; /* Ajuste la largeur selon ton besoin */
+        height: 83px;
+    }
     .footerCustom{
         font-size:medium;
     }
@@ -419,6 +517,12 @@ ul li.abc {
         flex-direction: column;
         align-items: center;
     }
+    .blue-ergo h2 {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding-top:10px;
+    }
     .p-pink-ergo {
         margin-top: 20px;
         padding-right: 0px;
@@ -435,6 +539,21 @@ ul li.abc {
     .blue-ergo .display-flex, .dark-blue-ergo .display-flex{
         flex-direction: column-reverse;
     }
+
+    .amenagement-img-height{
+        height: 150px;
+    }
+
+    .maison-dessin-size{
+        width: 26%;
+        height: 220px;
+        border-radius:60px;
+    }
+
+    .maison-dessin-center{
+        align-items: center;
+    }
+
 }
 
 /* TABLETTE */
@@ -473,11 +592,43 @@ ul li.abc {
 
     .h1-yellow-ergo, .pink-ergo h2{
         width: 100%;
-        margin-bottom: 20px;
     }
+
     .blue-ergo .display-flex, .dark-blue-ergo .display-flex{
         flex-direction: column-reverse;
     }
+    .expertises-bg-amenagement{
+        width: 498px;
+        background-color: #5da2d5;
+        height: 74px;
+    }
+    .expertises-bg-classique, .expertises-bg-sommeil{
+        width: 240px; 
+    }
+    .expertises-bg-alimentation{
+        width: 280px;
+    }
+    .amenagement-img-height{
+        margin-top: 5px;
+    }
+    .maison-dessin-center{
+        align-items: center;
+    }
+
+    .divIndexDescription-maison-dessin{
+        flex-direction: column-reverse;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .maison-dessin-size{
+        width: 38%;
+        margin-bottom: 15px;
+    }
+    .divIndexDescription-maison-dessin p {
+        margin:0px !important;
+    }
+
 }
 
 /* MOBILE */
@@ -485,12 +636,31 @@ ul li.abc {
     .navbarCustom, .footerCustom {
         font-size: 16px;
     }
+    .expertises-bg-alimentation{
+        width: 241px;
+    }
+    .expertises-bg-amenagement{
+        width: 255px;
+    }
+
+    .expertises-bg-amenagement-tel{
+        top:45%;
+        left: 29px;
+        height: 92px;
+    }
+
+    .expertises-bg-sommeil{
+        width: 200px; 
+    }
+    .expertises-bg-classique{
+        width: 200px; 
+    }
 
     .img-mains{
         height: 200px;
     }
     .mes-valeurs-img {
-        width: 300px;
+        width: 350px;
     }
     .about-me-title{
         margin-left: 8%;
@@ -513,13 +683,26 @@ ul li.abc {
         padding: 10px;
     }
 
-    .h1-yellow-ergo, .pink-ergo h2, .blue-ergo h2{
+    .h1-yellow-ergo, .pink-ergo h2{
         margin: auto;
         width: 100%;
         text-align: center;
     }
+
+    .blue-ergo h2 {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding-top:10px;
+    }
+
     .blue-ergo .display-flex, .dark-blue-ergo .display-flex{
         flex-direction: column-reverse;
+    }
+
+    .maison-dessin-size{
+        width: 75%;
+        margin-bottom: 15px;
     }
 
 }

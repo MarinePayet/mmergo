@@ -4,9 +4,18 @@
 
 {% block body %}
 
-<div class="divIndexDescription">
+<div>
+    <div class="img-mains">
+        <h1 class="textDeco"><strong>Mathilde MONTAGNON  </strong></br></br>Ergothérapeute</br> Bassin d’arcachon</h1>
+
+
+    </div>
+</div>
+
+<div class="div-flex-justify-center">
+{# <div class="divIndexDescription"> #}
     <div class="mon-parcours ">
-        <div class="qui-sui-je">
+        <div class="div-flex-justify-center">
             <h2 class="font-pink">Qui suis-je ?</h2>
         </div>
         </br>
@@ -17,7 +26,11 @@
             </div>
             <div >
                 <h3 class="font-pink"> Mon parcours</h3>
-                <p>Mathilde Montagnon - Ergothérapeute spécialisée dans l'accompagnement de l'enfant et de sa famille.</p>
+                <p> 
+                    <strong> Mathilde MONTAGNON, Ergothérapeute diplômée d'état, spécialisée dans l'accompagnement de l’enfant et de sa famille.</strong> 
+                    </br>J’exerce au sein du <strong>cabinet de Pédiatrie et de Périnatalité : Drôles de Soins au 8 avenue de l’Ellipse au Teich.</strong>
+                </p>
+                {# <p><strong>Mathilde Montagnon</strong> - Ergothérapeute spécialisée dans l'accompagnement de l'enfant et de sa famille.</p> #}
                 <p> Diplômée de l'IFE de Créteil en 2008, je suis ergothérapeute passionnée par l'accompagnement des enfants et de leur famille. Forte de plus de 15 ans d'expérience en pédiatrie, j'ai développé une expertise dans le domaine des troubles du neuro-développement. </p>
                 <p>
                     Mon approche est centrée sur l'enfant dans sa globalité, en prenant en compte ses besoins spécifiques, ses habitudes de vie et son environnement. Je travaille en étroite collaboration avec les parents pour les soutenir et leur donner les outils nécessaires pour favoriser le développement de leur enfant.
@@ -36,12 +49,28 @@
 
 <div>
 
-    <div class="divIndexDescription">
+    <div class="div-flex-justify-center">
+    {# <div class="divIndexDescription"> #}
 
         <div class="expertises-div">
 
-            <div class="mx-22" >
-                <img src="{{ "img/neuro.png" }}" alt="boule neuro" class=" expertises-img" style="height:244px;" >
+            
+            <div class=" expertise-card">
+                <img src="{{ "img/petite_enfance.png" }}" alt="enfant" class=" expertises-img" >
+                <div class="border border-color">
+                    <h4 class=" mt-2 text-center">Petite enfance</h4>
+                    <p class="expertises-txt p-2">
+                        Devenue maman, je me suis naturellement tournée vers la petite enfance et me suis formée dans ce domaine. J'accompagne les parents et les enfants sur les difficultés de :
+                        <ul>
+                            <li>Sommeil,</li>
+                            <li>Alimentation,</li>
+                            <li>Développement sensori-moteur</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="expertise-card" >
+                <img src="{{ "img/neuro.png" }}" alt="enfant cerveau" class=" expertises-img" >
                 <div class="border border-color ">
                     <h4 class=" mt-2 text-center">Troubles du neuro-développement</h4>
                     <p class="expertises-txt p-2">
@@ -58,25 +87,10 @@
                     </p>
                 </div>
             </div>
-            
-            <div class=" mx-22">
-                <img src="{{ "img/petite_enfance.png" }}" alt="enfant" class=" expertises-img" >
-                <div class=" border border-color" style="height:342px">
-                    <h4 class=" mt-2 text-center">Petite enfance</h4>
-                    <p class="expertises-txt p-2">
-                        Devenue maman, je me suis naturellement tournée vers la petite enfance et me suis formée dans ce domaine. J'accompagne les parents et les enfants sur les difficultés de :
-                        <ul>
-                            <li>Sommeil,</li>
-                            <li>Alimentation,</li>
-                            <li>Développement sensori-moteur</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
 
-            <div class="mx-22">
-                <img src="{{ "img/amenagement.png" }}" alt="maison plan" class=" expertises-img" style="height:244px;" >
-                <div class=" border border-color" style="height:342px">
+            <div class="expertise-card">
+                <img src="{{ "img/amenagement.png" }}" alt="maison plan" class=" expertises-img" >
+                <div class=" border border-color" >
                     <h4 class=" mt-2 text-center">Accessibilité et adaptation du logement</h4>
                     <p class="expertises-txt p-2">
                         J'interviens auprès de personnes en situation de handicap ou en perte de mobilité pour :
@@ -100,12 +114,14 @@
     </div>
 </div>
 
-<div class="divIndexDescription">
+<div class="div-flex-justify-center">
+{# <div class="divIndexDescription"> #}
     <img src="{{ "img/mesValeursDef.png" }}" alt="mes valeurs" class=" mes-valeurs-img" >
 </div>
 
-<div class="divIndexDescription">
-    <p class="ms-2 " style="width:80%">
+<div class="div-flex-justify-center">
+{# <div class="divIndexDescription"> #}
+    <p class="ms-2 div-en-savoir-plus" >
         <span class="en-savoir-plus fw-bold" >Pour en savoir plus </span> </br>
 
         N'hésitez pas à me contacter pour toute question ou demande de rendez-vous. Je serai ravie de vous accompagner dans votre parcours parental et dans le développement de votre enfant.
@@ -119,10 +135,11 @@
         <h2 class="expertises-title2"> Mes Formations</h2>
 </div>
 
-<div class="divIndexDescription ms-3">
+<div class="div-flex-justify-center ms-3">
+{# <div class="divIndexDescription ms-3"> #}
     <div >
         <p> Voici un aperçu des formations que j’ai réalisées et des domaines dans lesquelles je suis à même de vous accompagner :</p>
-        <ul> 
+        <ul class="line-h"> 
             <li> <strong>Développement ordinaire de l’enfant de 0 à 4 ans </strong> – Intervention en Ergothérapie, (Hestia Formation Marie RUFFIER BOURDET)</li>
             <li><strong>Difficultés alimentaires du bébé : l’accompagnement en Ergothérapie </strong>(Hestia Formation – Marie RUFFIER BOURDET)</li>
             <li><strong>Difficultés de passage aux morceaux chez les bébés et les enfants </strong>(Ergomums – Marie RUFFIER BOURDET)</li>
