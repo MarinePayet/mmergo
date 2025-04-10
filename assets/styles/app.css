@@ -484,6 +484,29 @@ ul li.abc {
     label: none;
 } */
 
+#map{
+    height: 400px;
+    width: 400px;
+}
+
+.p-tarif{
+    font-style: italic;
+    font-size: small;
+    width: 90%;
+    text-align: justify;
+}
+
+.btn-tarif{
+    /* width: 20%; */
+    margin-bottom: 10px;
+}
+
+.form-style{
+    background-color:#fcc1bf; 
+    width:40%;
+
+}
+
 /* ---------------- MEDIA QUERIES ---------------- */
 /* TABLETTE PAYSAGE */
 @media (max-width: 1024px) {
@@ -553,6 +576,11 @@ ul li.abc {
     .maison-dessin-center{
         align-items: center;
     }
+
+    .form-style{
+        width: 46%;
+    }
+    
 
 }
 
@@ -627,6 +655,16 @@ ul li.abc {
     }
     .divIndexDescription-maison-dessin p {
         margin:0px !important;
+    }
+
+    .contact-responsive{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-style{
+        width: 80%;
+        margin-bottom: 20px;
     }
 
 }
@@ -705,4 +743,13 @@ ul li.abc {
         margin-bottom: 15px;
     }
 
+    .form-style{
+        width: 100%;
+        margin-bottom: 20px;
+        margin:0px 0px 20px 0px !important;
+    }
+
 }
+
+
+

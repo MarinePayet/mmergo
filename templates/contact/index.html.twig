@@ -4,49 +4,123 @@
 
 {% block body %}
 
-<div >
-    <div class="d-flex justify-content-center">
-        <button class="btn-tarif mt-5 me-5"><h3>Consultez les tarifs</h3></button>
+    <div class="d-flex flex-column align-items-center mb-5">
+
+            <a href="{{ "img/Tarifs.pdf" }}" target="_blank"><button class="btn-tarif mt-5"><h3>Consultez les tarifs</h3></button></a>
+            <p class="p-tarif"> L’ergothérapeute est un professionnel de santé dont l’exercice est réglementé par le code de la Santé Publique 
+                (L 4331-1 et R4331-1). Il exerce sur prescription médicale. 
+                La prescription pour un bilan ou des séances en ergothérapie est à fournir lors du premier rendez-vous. </br>
+                Les séances de guidance et partenariat parental ne nécessitent pas de prescription.</br>
+
+                L’ergothérapie n’est pas remboursée par la sécurité sociale. L’ergothérapeute fixe librement le montant de ses 
+                honoraires dans le respect du tact et de la mesure. 
+                Certains dispositifs existent et permettent une participation aux financements des bilans, séances et/ou achats 
+                d’aides techniques (MDPH, mutuelles, conseil général, prestation extra légal, comité d’entreprise, fond social 
+                des établissements scolaires…). N’hésitez pas à en parler à votre ergothérapeute.
+            </p>
     </div> 
 
-    <div class=" ms-3 mt-3 pt-3 pb-3 d-flex justify-content-center" style=" background-color:#F78888; width:50%">
-        {# {{ form(form) }} #}
+    <div class="d-flex justify-content-around contact-responsive" >
+        <div class=" ms-3 mt-3 pt-3 pb-3 d-flex justify-content-center form-style" >
 
-        <div>
-        {{ form_start(form) }}
-                <div class="mb-3" style="display:flex">
-                    {{ form_row(form.Nom) }}
-                    {{ form_row(form.Prenom) }}
+            <div style="margin: auto;">
+                {{ form_start(form) }}
+                    <div class="mb-3 d-flex" >
+                        {{ form_row(form.Nom) }}
+                        {{ form_row(form.Prenom) }}
+                    </div>
+                    {{ form_row(form.Telephone) }}
+                    {{ form_row(form.Email) }}
+                    {{ form_row(form.Message) }}
+                    <div class="d-flex justify-content-center">
+                        {{ form_row(form.save, { 'label': 'Envoyer' }) }}
+                    </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center" style="text-align:center" >
+            <div >
+                <p class="mb-0">06.43.58.04.40</p>
+                <a href="mailto:m.montagnon.ergo@gmail.com" class="text-decoration-none" style="color:black"> m.montagnon.ergo@gmail.com</a>
+                <p> 8 avenue de l'Ellipse 33470 LE TEICH </p>
+                <div id="map" class=" mt-3 pt-3 pb-3"></div>
+                    <script>
+                        const map = L.map('map').setView([44.6143, -1.0280], 13); // Paris
+
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; OpenStreetMap contributors'
+                        }).addTo(map);
+
+                        L.marker([44.6143, -1.0280]).addTo(map)
+                            .bindPopup('Mon cabinet.')
+                            .openPopup();
+                    </script>
                 </div>
-                {{ form_row(form.Telephone) }}
-                {{ form_row(form.Email) }}
-                {{ form_row(form.Message) }}
-                <div class="d-flex justify-content-center">
-                    {{ form_row(form.save, { 'label': 'Envoyer' }) }}
-                </div>
-            {{ form_end(form) }}
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+{# {% block body %}
+<div class="container my-5">
+
+    <div class="text-center mb-4">
+        <a href="{{ "img/Tarifs.pdf" }}" target="_blank">
+            <button class="btn-tarif mt-3">
+                <h3 class="m-0">Consultez les tarifs</h3>
+            </button>
+        </a>
+    </div>
+
+    <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-10 col-lg-8">
+            <p class="p-tarif">
+                L’ergothérapeute est un professionnel de santé... 
+                <!-- Ton texte reste inchangé ici -->
+            </p>
         </div>
     </div>
 
-    <div>
-        <div id="map" style="height: 400px;"></div>
+    <div class="row g-4">
+        <div class="col-12 col-lg-6">
+            <div class="form-style p-4 rounded">
+                {{ form_start(form) }}
+                    <div class="row">
+                        <div class="col-md-6">{{ form_row(form.Nom) }}</div>
+                        <div class="col-md-6">{{ form_row(form.Prenom) }}</div>
+                    </div>
+                    {{ form_row(form.Telephone) }}
+                    {{ form_row(form.Email) }}
+                    {{ form_row(form.Message) }}
+                    <div class="text-center mt-3">
+                        {{ form_row(form.save, { 'label': 'Envoyer' }) }}
+                    </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
 
+        <div class="col-12 col-lg-6 text-center">
+            <p class="mb-1">06.43.58.04.40</p>
+            <a href="mailto:m.montagnon.ergo@gmail.com" class="text-decoration-none text-dark">
+                m.montagnon.ergo@gmail.com
+            </a>
+            <p>8 avenue de l'Ellipse 33470 LE TEICH</p>
+            <div id="map" class="mx-auto" style="max-width:100%; height:300px;"></div>
             <script>
-                const map = L.map('map').setView([44.6143, -1.0280], 13); // Paris
-
+                const map = L.map('map').setView([44.6143, -1.0280], 13);
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; OpenStreetMap contributors'
                 }).addTo(map);
-
                 L.marker([44.6143, -1.0280]).addTo(map)
-                    .bindPopup('Votre cabinet ici.')
+                    .bindPopup('Mon cabinet.')
                     .openPopup();
             </script>
-
         </div>
     </div>
 
 </div>
+{% endblock %} #}
 
-
-{% endblock %}
