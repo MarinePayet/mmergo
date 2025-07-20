@@ -6,7 +6,7 @@
 
     <div class="d-flex flex-column align-items-center mb-5">
 
-            <a href="{{ "img/Tarifs.pdf" }}" target="_blank"><button class="btn-tarif mt-5"><h3>Consultez les tarifs</h3></button></a>
+            <a href="{{ "img/Honoraires.pdf" }}" target="_blank"><button class="btn-tarif mt-5"><h3>Consultez les tarifs</h3></button></a>
             <p class="p-tarif"> L’ergothérapeute est un professionnel de santé dont l’exercice est réglementé par le code de la Santé Publique 
                 (L 4331-1 et R4331-1). Il exerce sur prescription médicale. 
                 La prescription pour un bilan ou des séances en ergothérapie est à fournir lors du premier rendez-vous. </br>
@@ -18,7 +18,7 @@
                 d’aides techniques (MDPH, mutuelles, conseil général, prestation extra légal, comité d’entreprise, fond social 
                 des établissements scolaires…). N’hésitez pas à en parler à votre ergothérapeute.
             </p>
-    </div> 
+    </div>  
 
     <div class="d-flex justify-content-around contact-responsive" >
         <div class=" ms-3 mt-3 pt-3 pb-3 d-flex justify-content-center form-style" >
@@ -39,11 +39,12 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center" style="text-align:center" >
+        <div class="d-flex justify-content-center" >
+        {# <div class="d-flex justify-content-center" style="text-align:center" > #}
             <div >
-                <p class="mb-0">06.43.58.04.40</p>
-                <a href="mailto:m.montagnon.ergo@gmail.com" class="text-decoration-none" style="color:black"> m.montagnon.ergo@gmail.com</a>
-                <p> 8 avenue de l'Ellipse 33470 LE TEICH </p>
+                <p class="mb-0"><i class="fa-solid fa-phone contact-icons"></i>  06.43.58.04.40</p>
+                <a href="mailto:m.montagnon.ergo@gmail.com" class="text-decoration-none" style="color:black"><i class="fa-regular fa-envelope contact-icons"></i> m.montagnon.ergo@gmail.com</a>
+                <p><i class="fa-regular fa-map contact-icons"></i> 8 avenue de l'Ellipse 33470 LE TEICH </p>
                 <div id="map" class=" mt-3 pt-3 pb-3"></div>
                     <script>
                         const map = L.map('map').setView([44.6143, -1.0280], 13); // Paris

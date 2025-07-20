@@ -38,21 +38,21 @@ final class ContactController extends AbstractController{
 
             // QUAND LA PARTIE ENVOI DE MAIL SERA OPERATIONNELLE
 
-            // $email = (new Email())
-            // ->from('hello@example.com')
-            // ->to('you@example.com')
-            // //->cc('cc@example.com')
-            // //->bcc('bcc@example.com')
-            // //->replyTo('fabien@example.com')
-            // //->priority(Email::PRIORITY_HIGH)
-            // ->subject('Time for Symfony Mailer!')
-            // ->text('Sending emails is fun again!')
-            // ->html('<p>See Twig integration for better HTML integration!</p>');
+            $email = (new Email())
+            ->from('marine.payet3@gmail.com')
+            ->to('marine.ulteam@gmail.com')
+            //->cc('cc@example.com')
+            //->bcc('bcc@example.com')
+            //->replyTo('fabien@example.com')
+            //->priority(Email::PRIORITY_HIGH)
+            ->subject('Time for Symfony Mailer!')
+            ->text('Sending emails is fun again!')
+            ->html('<p>See Twig integration for better HTML integration!</p>');
 
-            // $mailer->send($email);
+            $mailer->send($email);
 
             $mail = $form->getData();
-            dd($mail);
+            // dd($mail);
 
             return $this->redirectToRoute('app_contact');
         }
