@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ConsultationController!{% endblock %}
+{% block title %}Consultations{% endblock %}
 
 {% block body %}
 
@@ -63,7 +63,8 @@
 </div>
 
 <div class="consultation-div m-auto ">
-    <div class="border border-color-yellow my-2 px-3" style="border-radius:40px">
+    <div class="border border-color-yellow my-2 px-3 bor-radius-consult" >
+    {# <div class="border border-color-yellow my-2 px-3" style="border-radius:40px"> #}
         <div class="expertises-title-container mt-3">
             <div class="expertises-bg expertises-bg-classique"></div>
         <h2 id="consultation-classique" class="expertises-title2">Consultation classique</h2>
@@ -87,7 +88,7 @@
 
 <div >
 {# <div class="border border-color"> #}
-    <div class="border border-color-blue my-2 px-3">
+    <div class="border border-color-blue my-2 px-3 bor-radius-consult">
 
         <div class="expertises-title-container mt-3">
             <div class="expertises-bg expertises-bg-alimentation"></div>
@@ -96,6 +97,7 @@
     <p> Pour les bébés et les enfants qui présentent :</p>
     <ul>
         <li> Des difficultés alimentaires</li>
+        <li> Des troubles de la succion</li>
         <li> Des néophobies</li>
         <li> Un trouble alimentaire pédiatrique (TAP)</li>
     </ul>
@@ -107,7 +109,7 @@
 </div>
 
 <div>
-    <div class="border border-color-pink my-2 px-3">
+    <div class="border border-color-pink my-2 px-3 bor-radius-consult">
         <div class="expertises-title-container mt-3">
             <div class="expertises-bg expertises-bg-sommeil"></div>
             <h2 id="consult-sommeil" class="expertises-title2">Consultation sommeil</h2>
@@ -126,7 +128,7 @@
 </div>
 
 <div>
-    <div class="border border-color-dark-blue my-2 px-3">
+    <div class="border border-color-dark-blue my-2 px-3 bor-radius-consult">
         <div class="expertises-title-container mt-3">
             <div class="expertises-bg expertises-bg-amenagement expertises-bg-amenagement-tel text-center"></div>
             <h2 id="amenagement" class="expertises-title2">Aménagement du domicile - préconisation d’aides techniques</h2>

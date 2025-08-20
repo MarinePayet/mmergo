@@ -38,56 +38,20 @@ final class ContactController extends AbstractController{
 
             // QUAND LA PARTIE ENVOI DE MAIL SERA OPERATIONNELLE
 
-        $mailData = $form->getData();
-
-        // Prépare les données du message
-        $nom = htmlspecialchars($mailData['Nom']);
-        $prenom = htmlspecialchars($mailData['Prenom']);
-        $emailExpediteur = htmlspecialchars($mailData['Email']);
-        $telephone = htmlspecialchars($mailData['Telephone']);
-        $messageUser = htmlspecialchars($mailData['Message']);
-
-        // Construis le corps HTML
-        $body = "
-            <p><strong>Message de :</strong> $nom $prenom</p>
-            <p><strong>Email :</strong> $emailExpediteur</p>
-            <p><strong>Téléphone :</strong> $telephone</p>
-            <p><strong>Message :</strong></p>
-            <p>$messageUser</p>
-        ";
-
-        $email = (new Email())
+            $email = (new Email())
             ->from('contact@mathilde-montagnon-ergotherapeute-bassin-arcachon.fr')
-            ->to('m.montagnon.ergo@gmail.com')
-            ->replyTo($emailExpediteur)
-            ->subject("Nouveau message de $prenom $nom")
-            ->html($body);
+            ->to('marine.ulteam@gmail.com')
+            //->cc('cc@example.com')
+            //->bcc('bcc@example.com')
+            //->replyTo('fabien@example.com')
+            //->priority(Email::PRIORITY_HIGH)
+            ->subject('Time for Symfony Mailer!')
+            ->text('Sending emails is fun again!')
+            ->html('<p>See Twig integration for better HTML integration!</p>');
 
-        $mailer->send($email);
-
-        $this->addFlash('success', 'Votre message a bien été envoyé !');
-
-
-
-
-
-
-
-            
-            // $email = (new Email())
-            // ->from('contact@mathilde-montagnon-ergotherapeute-bassin-arcachon.fr')
-            // ->to('marine.payet3@gmail.com')
-            // //->cc('cc@example.com')
-            // //->bcc('bcc@example.com')
-            // //->replyTo('fabien@example.com')
-            // //->priority(Email::PRIORITY_HIGH)
-            // ->subject('Time for Symfony Mailer!')
-            // ->text('Sending emails is fun again!')
-            // ->html('<p>See Twig integration for better HTML integration!</p>');
-
-            // $mailer->send($email);
+            $mailer->send($email);
             // dd($email);
-            // $mail = $form->getData();
+            $mail = $form->getData();
             // dd($mail);
 
             return $this->redirectToRoute('app_contact');
