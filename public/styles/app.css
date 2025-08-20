@@ -1,0 +1,767 @@
+/* ---------------- NAVBAR ET FOOTERBAR ---------------- */
+.textDeco {
+    text-decoration: none !important;
+    color: white !important; 
+}
+
+.navbarCustom, .footerCustom {
+    padding-top: 5px;
+    margin-bottom: 0px !important;
+    padding-bottom: 5px;
+    display: flex !important; 
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    background-color: #F78888 !important;
+    height: 60px ;
+    list-style: none !important;
+    font-size: 25px ;
+    /* font-size: 25px !important; */
+}
+.navbarCustom ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+}
+
+.footerCustom {
+    margin-top: 50px;
+}
+
+.logo-size{
+    height: 50px;
+}
+
+/* ---------------- PAGE D ACCUEIL ---------------- */
+
+.font-pink{
+    color:#F78888
+}
+
+.line-h{
+    line-height: 30px;
+}
+
+.img-mains {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.5; 
+    background-image: url('img/mains2.png') ;
+    height: 500px; 
+    /* border-bottom-right-radius: 20%;  */
+    border-bottom-right-radius: 90px; 
+    z-index: 0;
+}  
+
+.indexDescription {
+    margin-top: 50px;
+    background-color: #fcd6d6;
+    width: 70%;
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.div-flex-justify-center {
+/* .divIndexDescription { */
+    display: flex;
+    justify-content: center;
+}
+
+ul li.abc {
+    list-style: none; 
+    background: url('img/ABC.png') no-repeat left center;
+    background-size: 16px 16px; 
+    padding-left: 25px;
+}
+
+/* ---------------- QUI SUIS-JE ---------------- */
+
+/* .qui-sui-je {
+    display: flex;
+    justify-content: center;
+} */
+
+.about-me-title{
+    margin-left:15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div-en-savoir-plus{
+    width: 80%;
+}
+
+.mon-parcours {
+    width: 80%;
+    /* width: 1000px; */
+    background-color: #fcd6d6;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding : 20px;
+    margin-top: 60px;
+}
+
+.flex-parcours {
+    display: flex;
+}
+
+.mathilde-img{
+    width: 150px;
+}
+
+.margin-img{
+    margin-right: 20px;
+}
+
+.expertises-img {
+    width: 356px;
+    height: 244px;
+}
+
+.expertises-txt{
+    width: 350px;
+}
+
+.mes-valeurs-img {
+    width: 700px;
+    height: auto;
+}
+
+.expertise-card {
+    width: 350px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.expertises-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrage horizontal des blocs */
+    gap: 20px; /* Espacement entre les blocs */
+}
+
+@media (max-width: 768px) {
+    .expertises-div {
+        flex-direction: column;
+        align-items: center; /* Centre les éléments en colonne */
+    }
+}
+.expertises-title-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.expertises-bg {
+    position: absolute;
+    top: 43%;
+    left: 36px;
+    height: 50px; /* Ajuste la hauteur */
+    border-radius: 10px;
+    z-index: -1; /* Met la div en arrière-plan */
+    transform: translateY(-50%); /* Centre verticalement */
+}
+
+
+.expertises-bg-expertise {
+    
+    width: 300px; /* Ajuste la largeur selon ton besoin */
+    background-color: #b1dbf7;
+}
+
+.expertises-bg-valeurs {
+    
+    width: 125px; /* Ajuste la largeur selon ton besoin */
+    background-color: #fcc1bf; 
+}
+
+.expertises-bg-formations {
+    
+    width: 170px; /* Ajuste la largeur selon ton besoin */
+    background-color: #f7df85; 
+}
+
+.expertises-title2 {
+    position: relative;
+    font-weight: bold;
+    z-index: 1; /* Place le texte au-dessus */
+}
+
+.expertises-title {
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding: 5px 0; 
+    
+}
+
+.border-color{  
+    border-color: #b1dbf7 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+}
+
+.expertise-card .border-color{
+    height: 342px;
+}
+
+.border-color-white{
+    /* border-color: white !important; */
+    border-color: #F78888 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.en-savoir-plus {
+    font-weight: 100;
+    color: #F78888;
+}
+
+/* ---------------- Ergotherapy ---------------- */
+
+.yellow-ergo, .blue-ergo, .dark-blue-ergo, .pink-ergo {
+    width: 90%;
+    margin:10px auto;
+}
+
+.yellow-ergo{
+    background-color: #f8e8a7;
+    /* margin:10px; */
+    height:250px;
+    display: flex;
+    border-bottom-right-radius:50px;
+}
+
+.h1-yellow-ergo{
+    margin: auto;
+    /* width: 30%;  */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.p-yellow-ergo{
+    width:70%;
+    margin: auto; 
+    font-size:large; 
+    line-height:25px; 
+    text-align:justify; 
+    padding-right:20px;
+}
+
+.blue-ergo{
+    background-color: #d8edfb;
+    border-top-left-radius:50px;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 20px;
+}
+
+.div-blue-ergo{
+    margin-top:21px; 
+    width:70%;
+}
+
+.dark-blue-ergo{
+    background-color: #add0e9;
+    border-top-left-radius:50px;
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    padding-left: 30px;
+}
+
+.p-dark-blue-ergo{
+    width:70%;
+    margin: auto; 
+    font-size:large; 
+    line-height:25px; 
+    text-align:justify; 
+    padding-right:20px;
+}
+.pink-ergo{
+    background-color: #fcd6d6;
+    border-bottom-right-radius:50px;
+}
+
+.border-height-ergo{
+    height:374px;
+}
+
+.div-ergo{
+    width:350px; 
+    padding-left:10px;
+}
+
+.div-pink-ergo{
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.domain-div-pink-ergo{
+    padding-left:10px;
+    margin-bottom: 15px;
+}
+
+.h2-pink-ergo{
+    margin: auto;
+    /* width: 30%;  */
+    text-align: center; 
+    padding-left:10px; 
+    padding-right:10px;
+}
+
+.p-pink-ergo{
+    width:70%;
+    margin: auto; 
+    font-size:large; 
+    line-height:25px; 
+    text-align:justify; 
+    padding-right:48px;
+}
+
+.li-blue-ergo{
+    font-size:large; 
+    text-align:justify; 
+}
+
+.p-blue-ergo{
+    padding-bottom:20px; 
+    padding-left:20px; 
+    padding-right:20px; 
+    font-size:large;
+}
+
+.centered{
+    background-color: #F78888;
+
+}
+
+.blue-ergo h2 {
+    align-content:center; 
+    width:40%;
+    margin: auto; height:100%;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.ergo-img{
+    width: 350px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+
+/* ---------------- CONSULTATIONS ---------------- */
+
+.consultation-div {
+    width:85%;
+}
+
+.en-savoir-plus-consult{
+    color:black;
+    /* text-decoration: none; */
+}
+.consult-yellow{
+    background-color: #f3d250;
+    height: 135px;
+}
+.border-color-yellow{  
+    border-color: #f3d250 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+}
+.consult-blue{
+    background-color: #90ccf4;
+    height: 135px;
+}
+.border-color-blue{  
+    border-color: #90ccf4 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+}
+.consult-pink{
+    background-color: #F78888;
+    height: 135px;
+
+}
+.border-color-pink{  
+    border-color: #F78888 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+}
+.consult-dark-blue{
+    background-color: #5da2d5;
+    height: 135px;
+}
+.consult-dark-blue h4 {
+    width:356px;
+}
+.border-color-dark-blue{  
+    border-color: #5da2d5 !important;
+    border-width: 3px !important; 
+    border-style: solid !important;
+}
+
+.expertises-bg-classique{
+    width: 280px; /* Ajuste la largeur selon ton besoin */
+    background-color: #f3d250; 
+}
+.expertises-bg-alimentation{
+    width: 320px; /* Ajuste la largeur selon ton besoin */
+    background-color: #90ccf4; 
+}
+.expertises-bg-sommeil{
+    width: 260px; /* Ajuste la largeur selon ton besoin */
+    background-color: #F78888; 
+}
+.expertises-bg-amenagement{
+    width: 855px; /* Ajuste la largeur selon ton besoin */
+    background-color: #5da2d5; 
+}
+
+.btn-doc, .btn-tarif{
+    background-color: #F78888;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.btn-doc{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.btn-tarif{
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.bor-radius-consult{
+    border-radius:40px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -ms-border-radius:40px;
+    -o-border-radius:40px;
+}
+
+/* ---------------- AMENAGEMENT DU DOMICILE ---------------- */
+
+.amenagement-img-height{
+    height: 200px;
+}
+
+.maison-dessin-size{
+    width: 26%;
+    height: 273px;
+    border-radius:60px;
+}
+.divIndexDescription-maison-dessin p {
+    text-align: justify;
+}
+.div-amenagement{
+    width:85%; 
+    background-color:#fcd6d6; 
+    border-radius:40px;
+}
+
+.flex-wrapping{
+    flex-wrap:wrap;
+}
+
+/* ---------------- TARIFS ET CONTACTS ---------------- */
+
+/* .no-label {
+    label: none;
+} */
+
+#map{
+    height: 400px;
+    width: 400px;
+}
+
+.p-tarif{
+    font-style: italic;
+    font-size: small;
+    width: 90%;
+    text-align: justify;
+}
+
+.btn-tarif{
+    /* width: 20%; */
+    margin-bottom: 10px;
+}
+
+.form-style{
+    background-color:#fcc1bf; 
+    width:40%;
+
+}
+
+.contact-icons{
+    color:#F78888;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+/* TABLETTE PAYSAGE */
+@media (max-width: 1024px) {
+    .navbarCustom {
+        font-size: 20px;
+    }
+    .expertises-bg-amenagement{
+        width: 646px; /* Ajuste la largeur selon ton besoin */
+        height: 83px;
+    }
+    .footerCustom{
+        font-size:medium;
+    }
+
+    .img-mains{
+        height: 350px;
+        background-size: cover;
+    }
+
+    .centered{
+        text-align: center;
+        font-size: 21px;
+        margin-top: 6px;
+    }
+
+    .domain-div-pink-ergo{
+        padding-left: 0px;
+    }
+
+    .display-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blue-ergo h2 {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding-top:10px;
+    }
+    .p-pink-ergo {
+        margin-top: 20px;
+        padding-right: 0px;
+        width: 85%;
+    }
+    .yellow-ergo, .blue-ergo, .dark-blue-ergo, .pink-ergo {
+        padding: 15px;
+        height: auto;
+    }
+    .p-yellow-ergo, .p-dark-blue-ergo, .div-blue-ergo{
+        width: 85%;
+    }
+  
+    .blue-ergo .display-flex, .dark-blue-ergo .display-flex{
+        flex-direction: column-reverse;
+    }
+
+    .amenagement-img-height{
+        height: 150px;
+    }
+
+    .maison-dessin-size{
+        width: 26%;
+        height: 220px;
+        border-radius:60px;
+    }
+
+    .maison-dessin-center{
+        align-items: center;
+    }
+
+    .form-style{
+        width: 46%;
+    }
+    
+
+}
+
+/* TABLETTE */
+@media (max-width: 768px) {
+    .navbarCustom, .footerCustom {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .img-mains{
+        height: 250px;
+    }
+
+    .footerCustom{
+        font-size:medium;
+        height: 100%;
+    }
+
+    .mes-valeurs-img {
+        width: 500px;
+    }
+
+    .border-height-ergo{
+        height: 100%;
+    }
+
+    .yellow-ergo p, .p-blue-ergo, .p-dark-blue-ergo, .div-blue-ergo, .p-pink-ergo {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .p-pink-ergo {
+        padding-right:0px;
+    }
+
+    .h1-yellow-ergo, .pink-ergo h2{
+        width: 100%;
+    }
+
+    .blue-ergo .display-flex, .dark-blue-ergo .display-flex{
+        flex-direction: column-reverse;
+    }
+    .expertises-bg-amenagement{
+        width: 498px;
+        background-color: #5da2d5;
+        height: 74px;
+    }
+    .expertises-bg-classique, .expertises-bg-sommeil{
+        width: 240px; 
+    }
+    .expertises-bg-alimentation{
+        width: 280px;
+    }
+    .amenagement-img-height{
+        margin-top: 5px;
+    }
+    .maison-dessin-center{
+        align-items: center;
+    }
+
+    .divIndexDescription-maison-dessin{
+        flex-direction: column-reverse;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .maison-dessin-size{
+        width: 38%;
+        margin-bottom: 15px;
+    }
+    .divIndexDescription-maison-dessin p {
+        margin:0px !important;
+    }
+
+    .contact-responsive{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-style{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .navbarCustom, .footerCustom {
+        font-size: 16px;
+    }
+    .expertises-bg-alimentation{
+        width: 241px;
+    }
+    .expertises-bg-amenagement{
+        width: 255px;
+    }
+
+    .expertises-bg-amenagement-tel{
+        top:45%;
+        left: 29px;
+        height: 92px;
+    }
+
+    .expertises-bg-sommeil{
+        width: 200px; 
+    }
+    .expertises-bg-classique{
+        width: 200px; 
+    }
+
+    .img-mains{
+        height: 200px;
+    }
+    .mes-valeurs-img {
+        width: 350px;
+    }
+    .about-me-title{
+        margin-left: 8%;
+    }
+
+    .flex-parcours {
+        flex-direction: column;
+        align-items: center;
+    }
+    .yellow-ergo p, .p-blue-ergo, .p-dark-blue-ergo, .div-blue-ergo, .li-blue-ergo, .p-pink-ergo {
+        font-size: 0.9rem;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .p-dark-blue-ergo{
+        padding-right: 0px;
+    }
+
+    .yellow-ergo, .blue-ergo, .dark-blue-ergo, .pink-ergo {
+        padding: 10px;
+    }
+
+    .h1-yellow-ergo, .pink-ergo h2{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .blue-ergo h2 {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding-top:10px;
+    }
+
+    .blue-ergo .display-flex, .dark-blue-ergo .display-flex{
+        flex-direction: column-reverse;
+    }
+
+    .maison-dessin-size{
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    .form-style{
+        width: 100%;
+        margin-bottom: 20px;
+        margin:0px 0px 20px 0px !important;
+    }
+
+}
+
+
+
